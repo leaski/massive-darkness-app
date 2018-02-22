@@ -1,0 +1,11 @@
+<p>
+  monsters-list works!
+</p>
+
+<h2>monsters at level 1</h2>
+<div *ngFor="let monster of monsters" class="card col-3">
+  {{ monster.name }}
+  <div class="d-flex">
+    <span class="heart" *ngFor="let i of getMonsterHealthArr(monster)"></span>
+  </div>
+</div>
